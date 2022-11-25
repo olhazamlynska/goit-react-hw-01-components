@@ -38,11 +38,10 @@ color: ${p => p.theme.colors.black};
 `
 
 export const ProfileStarts = styled.ul`
-list-style: none;
+
  display: flex;
  justify-content: space-around;
-padding: 0;
-margin: 0;
+
 border-top: 1px solid ${p => p.theme.colors.primary};
 `
 

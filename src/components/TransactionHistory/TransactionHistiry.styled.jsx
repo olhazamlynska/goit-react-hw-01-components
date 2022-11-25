@@ -6,18 +6,18 @@ export const TransactionTable = styled.table`
   background-color: ${p => p.theme.colors.white};
   width: 500px;
   border-radius: ${p => p.theme.radii.sm};
- box-shadow: 5px -5px 40px ${p => p.theme.colors.primary};
+  box-shadow: 5px -5px 40px ${p => p.theme.colors.primary};
 `;
 
 export const TransactionHeaderTr = styled.tr`
- background-color: ${p => p.theme.colors.text};
+  background-color: ${p => p.theme.colors.text};
 `;
 
 
 export const TransactionHeader = styled.th`
   padding: ${p => p.theme.space[4]}px;
   border: ${p => p.theme.borders.normal};
-border-radius: ${p => p.theme.radii.sm};
+  border-radius: ${p => p.theme.radii.sm};
 `;
 
 export const TransactionData = styled.td`
