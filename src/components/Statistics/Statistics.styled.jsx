@@ -8,22 +8,21 @@ align-items: center;
 width: 500px;
 margin-top:${p => p.theme.space[5]}px;
 margin-bottom:${p => p.theme.space[5]}px;
+border-radius: ${p => p.theme.radii.sm};
 box-shadow: 5px -5px 40px ${p => p.theme.colors.primary};
-
+overflow: hidden;
 `
 
 
 export const StatisticSection = styled.div`
 width: 100%;
-border-radius: ${p => p.theme.radii.sm};
-border-right: 1px solid  ${p => p.theme.colors.primary};
 `
 
 export const StatisticList= styled.ul`
 display: flex;
 justify-content:space-around;
 align-items:center;
-
+margin-top:${p => p.theme.space[2]}px;
 `
 
 
