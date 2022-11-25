@@ -5,30 +5,30 @@ import {ProfileWrspper,ProfileDescription,ProfileName, ProfileImg, ProfileStarts
 
 
 export const Profile = ({ username, tag, location, avatar, stats:{followers, views, likes} }) => { 
-   return <ProfileWrspper className="profile">
-  <ProfileDescription className="description">
+   return <ProfileWrspper >
+  <ProfileDescription >
     <ProfileImg
       src={avatar}
       alt="User avatar"
-      className="avatar"
+  
     />
-    <ProfileName className="name">{username}</ProfileName>
-         <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+    <ProfileName >{username}</ProfileName>
+         <p >@{tag}</p>
+    <p >{location}</p>
   </ProfileDescription>
 
-  <ProfileStarts className="stats">
+  <ProfileStarts >
     <ProfileStartsItem>
-      <p className="label">Followers</p>
-      <StatsQuantity className="quantity">{followers}</StatsQuantity>
+      <p >Followers</p>
+      <StatsQuantity>{followers}</StatsQuantity>
     </ProfileStartsItem>
        <ProfileStartsItem>
-      <p className="label">Views</p>
-      <StatsQuantity className="quantity">{views}</StatsQuantity>
+      <p >Views</p>
+      <StatsQuantity >{views}</StatsQuantity>
     </ProfileStartsItem>
     <ProfileStartsItem>
-      <p className="label">Likes</p>
-      <StatsQuantity className="quantity">{likes}</StatsQuantity>
+      <p>Likes</p>
+      <StatsQuantity>{likes}</StatsQuantity>
     </ProfileStartsItem>
   </ProfileStarts>
 </ProfileWrspper>

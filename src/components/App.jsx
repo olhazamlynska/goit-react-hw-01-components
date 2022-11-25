@@ -11,22 +11,23 @@ import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import tarnsactions from '../data/transactions.json'
 
 
-
+import {AppWrap} from './App.styled'
+import { StatisticWrap } from './Statistics/Statistics.styled'
 
 export const App = () => {
   return (
-    <>
+    <AppWrap>
    <Profile
   username={user.username}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-      />
+      /><StatisticWrap>
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+     </StatisticWrap>
       <FriendList friends={friends} />
       <TransactionHistory items={tarnsactions} />
-    </>
+    </AppWrap>
   );
 };
