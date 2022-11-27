@@ -1,6 +1,4 @@
-
 import styled from 'styled-components';
-
 
 export const TransactionTable = styled.table`
   background-color: ${p => p.theme.colors.white};
@@ -12,7 +10,6 @@ export const TransactionTable = styled.table`
 export const TransactionHeaderTr = styled.tr`
   background-color: ${p => p.theme.colors.text};
 `;
-
 
 export const TransactionHeader = styled.th`
   padding: ${p => p.theme.space[4]}px;
@@ -27,7 +24,6 @@ export const TransactionData = styled.td`
 `;
 
 export const TransactionRow = styled.tr`
-
   :nth-child(2n + 1) {
     background-color: ${p => p.theme.colors.primary};
   }
