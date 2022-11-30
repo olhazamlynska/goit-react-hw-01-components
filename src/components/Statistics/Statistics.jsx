@@ -8,7 +8,7 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticSection title={title}>
-      {title ? <h2>{title}</h2> : console.log('There is no title')}
+      {title && <h2>{title}</h2>}
 
       <StatisticList>
         {stats.map(({ id, label, percentage }) => {
